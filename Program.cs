@@ -71,3 +71,11 @@ for (int i = 21; i < (n * 100) + 21; i += 100)
     lista += 100;
     Console.WriteLine(suma);
 }
+//zad10
+for (int i = 1; i < 1001; i++)
+if (i % 10 == Math.Sqrt(i) ||
+    i % 100 == Math.Sqrt(i) || 
+    i % 1000 == Math.Sqrt(i))
+{
+        Console.WriteLine(i);
+}
