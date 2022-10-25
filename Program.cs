@@ -60,3 +60,14 @@ for (int i = 0; i < l * 12; i++)
     sk += wk;
     Console.WriteLine(sk);
 }
+//zad9
+int suma = 0;
+int lista = 21;
+int n = int.Parse(Console.ReadLine());
+for (int i = 21; i < (n * 100) + 21; i += 100)
+{
+    Console.WriteLine(lista); 
+    suma += i;
+    lista += 100;
+    Console.WriteLine(suma);
+}
