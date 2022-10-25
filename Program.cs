@@ -31,3 +31,20 @@ for (int i = 0; i < a; i++)
     suma += x;
 }
 Console.WriteLine(suma);
+//zad6
+int suma = 0;
+int k = int.Parse(Console.ReadLine());
+for (int i = 1; i < 2 * k; i++)
+if (i % 2 == 0)
+{
+    suma += i;
+    Console.WriteLine(suma);
+}
+//zad7
+int suma = 0;
+int m = int.Parse(Console.ReadLine());
+for (int i = 11; i < (2 * m) + 10; i+=2)
+{
+    suma += i;
+    Console.WriteLine(suma);
+}
