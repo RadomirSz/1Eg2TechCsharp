@@ -48,3 +48,15 @@ for (int i = 11; i < (2 * m) + 10; i+=2)
     suma += i;
     Console.WriteLine(suma);
 }
+//zad8
+int w = int.Parse(Console.ReadLine());
+int l = int.Parse(Console.ReadLine());
+int wk = 0;
+int sk = w;
+for (int i = 0; i < l * 12; i++)
+    
+{
+    wk = (int)(sk * 0.06 / 12);
+    sk += wk;
+    Console.WriteLine(sk);
+}
