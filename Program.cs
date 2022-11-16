@@ -1,61 +1,70 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _2_11_2022
+﻿//zad 1
+int i = 0;
+while (i < 10)
 {
-    internal class Program
+    Console.WriteLine(Math.Pow(i, 3) + 3);
+    i++;
+}
+Console.WriteLine();
+Console.WriteLine();
+//zad2
+int a = 100;
+while (a < 1000)
+{
+    if (a % 15 == 0)
+    { Console.WriteLine(a); }
+    a++;
+}
+Console.WriteLine();
+Console.WriteLine();
+//zad3
+int x = int.Parse(Console.ReadLine());
+int p = 1;
+while (p < x + 1)
+{
+    if (x % p == 0)
     {
-        static void Main(string[] args)
-        {
-            // zad 1 napisz program ktory obliczy sume n pierwszych liczb fibonacciego (na 3)
-            // 1 + 2+ 3+5+8+13+21+34...
-            /*int n = int.Parse(Console.ReadLine());
-            int a = 0;
-            int b = 1;
-            int temp;
-            int suma = 0;
-            for (int i = 0; i < n; i++)
-            {
-                temp = a;
-                a = b;
-                b += temp;
-                suma = suma + b;
-            }
-            Console.WriteLine(suma);*/
-
-            //zad2 napisz program sumujący "w" pierwszych liczb trzycyfrowych (na 2)
-            /*int suma = 0;
-            int w = int.Parse(Console.ReadLine());
-            for (int i = 100; i < w + 100; i++)
-            {
-                suma += i;
-            }
-            Console.WriteLine(suma);
-*/
-            //zad3 sprawdź czy liczba wpisana przez usera jest  doskonała
-            // 6 = 1 + 2 + 3
-            //28 = 1+2+4+7+14
-            int suma = 0;
-            int a = int.Parse(Console.ReadLine());
-            for (int i = 1; i < a; i++)
-                if (a % i == 0)
-                { 
-                    suma += i; 
-                }
-            if (suma == a)
-            {
-                Console.WriteLine("TAK"); 
-            }
-            else
-            {
-                Console.WriteLine("NIE");
-            }
-               
-            Console.ReadKey();
-        }
+        Console.WriteLine(p);
     }
+    p++;
+}
+Console.WriteLine();
+Console.WriteLine();
+//zad4
+int suma = 0;
+int f = 10;
+while (f < 100)
+{
+    suma += f;
+    f++;
+}
+Console.WriteLine(suma);
+Console.WriteLine();
+//zad 5
+int x;
+int n = int.Parse(Console.ReadLine());
+int i = 0;
+int suma = n * (n + 1) / 2;
+while(i<n-1)
+{
+    x = int.Parse(Console.ReadLine());
+    suma = suma - x;
+    i++;
+}
+Console.WriteLine(suma);
+//zad 6
+int l = int.Parse(Console.ReadLine());
+int m = 0;
+int v = 0;
+int b = 1;
+int temp;
+Console.WriteLine(v);
+Console.WriteLine(b);
+while (m < l)
+{
+    temp = v;
+    v = b;
+    b = temp + b;
+    Console.WriteLine(b + " ");
+    m++;
 }
