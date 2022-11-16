@@ -68,3 +68,14 @@ while (m < l)
     Console.WriteLine(b + " ");
     m++;
 }
+
+//zad na while
+//oblicz sumę cyfr zadanej liczby n
+int n = int.Parse(Console.ReadLine());
+int suma = 0;
+while(n>0)
+{
+    suma = suma + n%10;
+    n = n/10;
+}
+Console.WriteLine(suma);
