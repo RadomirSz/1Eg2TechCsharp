@@ -1,81 +1,45 @@
-﻿//zad 1
-int i = 0;
-while (i < 10)
-{
-    Console.WriteLine(Math.Pow(i, 3) + 3);
-    i++;
-}
-Console.WriteLine();
-Console.WriteLine();
-//zad2
-int a = 100;
-while (a < 1000)
-{
-    if (a % 15 == 0)
-    { Console.WriteLine(a); }
-    a++;
-}
-Console.WriteLine();
-Console.WriteLine();
-//zad3
-int x = int.Parse(Console.ReadLine());
-int p = 1;
-while (p < x + 1)
-{
-    if (x % p == 0)
-    {
-        Console.WriteLine(p);
-    }
-    p++;
-}
-Console.WriteLine();
-Console.WriteLine();
-//zad4
-int suma = 0;
-int f = 10;
-while (f < 100)
-{
-    suma += f;
-    f++;
-}
-Console.WriteLine(suma);
-Console.WriteLine();
-//zad 5
-int x;
-int n = int.Parse(Console.ReadLine());
-int i = 0;
-int suma = n * (n + 1) / 2;
-while(i<n-1)
-{
-    x = int.Parse(Console.ReadLine());
-    suma = suma - x;
-    i++;
-}
-Console.WriteLine(suma);
-//zad 6
-int l = int.Parse(Console.ReadLine());
-int m = 0;
-int v = 0;
-int b = 1;
-int temp;
-Console.WriteLine(v);
-Console.WriteLine(b);
-while (m < l)
-{
-    temp = v;
-    v = b;
-    b = temp + b;
-    Console.WriteLine(b + " ");
-    m++;
-}
+﻿//tablica - zmienna (kolekcja) do trzymania wielu zmiennych
+/*int a = 4;
+int b = 7;
+int d = 3;
+int c = 1;
+int e;*/
+/*int[] T = new int[4];
+T[0] = 1;
+T[1] = 6;
+T[2] = 4;
+T[3] = 7;
 
-//zad na while
-//oblicz sumę cyfr zadanej liczby n
-int n = int.Parse(Console.ReadLine());
-int suma = 0;
-while(n>0)
+Console.WriteLine(T[1]+ " " + T[3]);
+for (int i = 0; i < 4; i++)
 {
-    suma = suma + n%10;
-    n = n/10;
+    Console.WriteLine(T[i]);
+}*/
+/*
+int[] K = new int[] { 6, 4, 7, 2, 3, 1, 5, 9, 8 };
+for (int i = 0; i < K.Length; i++)
+{
+    Console.Write($"{K[i]}");
+}*/
+/*int[] L = new int[6]{4, 5, 8, 9, 7, 6};
+int maks = L[0];
+for (int i = 0; i < L.Length; i++)
+{
+    if (L[i] > maks)
+    {
+        maks = L[i];
+    }
 }
-Console.WriteLine(suma);
+Console.WriteLine(maks);
+*/
+//znajdź mini wartość w tablicy (6,2,1,4,9,5)
+int[]G = new int[6] {6,2,1,4,9,5};
+int mini = int.MaxValue;
+for (int i = 0; i < G.Length; i++)
+{
+    if (G[i] < mini)
+    {
+        mini = G[i];
+    }
+}
+Console.WriteLine(mini);
