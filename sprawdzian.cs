@@ -1,4 +1,4 @@
-﻿//zad15 (z kp) / 1 zad na spr
+//zad15 (z kp) / 1 zad na spr
 float iloczyn = 1;
 float mianownik = 1;
 float licznik = 3;
